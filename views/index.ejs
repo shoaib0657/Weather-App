@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <h1>Weather App</h1>
+
+    <div class="top">
+        <form action="/" method="post">
+
+            <input type="text" name="cityName" id="cityInput" placeholder="City Name">
+
+            <!-- <label for="cityInput">CITY NAME: </label> -->
+            
+            <button type="submit">Get Weather</button>
+    
+        </form>
+    </div>    
+
+    <div class="bottom">
+        <% if(weather !==null) { %>
+            <h3>
+                <%= weather %>
+            </h3>
+        <% } %>
+
+        <% if(description !==null) { %>
+            <h3>
+                <%= description %>
+            </h3>
+        <% } %>
+
+        <% if(weatherUrl !==null) { %>
+            <img src=<%=weatherUrl %> alt="google">
+        <% } %>
+
+        <% if(error !==null) { %>
+            <h3>
+                <%= error %>
+            </h3>
+        <% } %>
+    </div>
+
+</body>
+
+</html>
