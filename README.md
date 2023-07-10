@@ -8,5 +8,5 @@ I developed a simple Weather App using Node.js, Express, and OpenWeatherMap API.
 - OpenWeatherMap API: Integration for weather data retrieval
 - Git: Version control and collaboration
 
-### Require environment variables
+### Required environment variables
 - API_KEY=yourapikey
